@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Phishing Framework (Under Development / Only Frontend)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This phishing framework is under development and is designed for educational purposes to demonstrate the techniques used in phishing attacks. The goal of this project is to provide a controlled, ethical environment where security professionals and ethical hackers can practice and test their knowledge in identifying phishing techniques and vulnerabilities.
 
-## Expanding the ESLint configuration
+**Note:** This framework is not to be used for illegal activities. It is intended solely for research, training, and improving cybersecurity awareness.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features (Under Development)
 
-- Configure the top-level `parserOptions` property like this:
+- **Pre-built Templates**: The framework includes customizable phishing page templates that simulate commonly used websites.
+- **Automated Campaigns**: Allows the user to launch phishing campaigns with automated email spoofing and social engineering tools.
+- **Data Capture**: Collects data from victims' interactions with the phishing pages (for authorized testing environments).
+- **Reporting**: Generates reports on the success of phishing campaigns for analysis and improvement.
+- **Dashboard**: Provides an easy-to-use dashboard for campaign management and viewing captured data.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Usage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Once the server is up and running, you can access the phishing framework through the web interface:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Create a Campaign**: Choose from a list of pre-built phishing templates (e.g., login pages, fake password reset forms).
+2. **Customize Templates**: Edit the templates to fit the phishing scenario you are simulating.
+3. **Launch Campaign**: Start the campaign and use the automated email sender to distribute phishing links to test subjects (with proper authorization).
+4. **Monitor and Report**: Track the performance of your phishing campaigns via the dashboard and generate reports.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Important Considerations
+
+- **Authorization**: Ensure you have explicit permission to run phishing tests on the target network or individuals. Unauthorized use of phishing attacks is illegal and unethical.
+- **Data Handling**: Any data captured through the phishing pages should be handled securely and only used in controlled, ethical environments for testing and educational purposes.
+- **Security**: Make sure the framework is used responsibly and is not exposed to the public unless properly secured.
+
+## Contributing
+
+Contributions to the phishing framework are welcome. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request with a description of what you've added or fixed.
+
+### Code of Conduct
+
+Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) while contributing to this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Disclaimer
+
+This phishing framework is for educational and research purposes only. The authors and contributors are not responsible for any misuse of the framework or any legal or ethical violations resulting from its use. Always ensure that you have permission from the target environment before running any tests.
